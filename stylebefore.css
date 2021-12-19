@@ -32,6 +32,11 @@ div.center{
     font-weight: 400;
     font-size:140%;
 }
+@media only screen and (max-width: 600px){
+	#bigger{
+		font-size:100%;
+	}
+}
 .logo-1 {
     
     color: white;
