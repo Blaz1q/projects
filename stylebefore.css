@@ -21,9 +21,6 @@ div.center{
     display: flex;
 
 }
-#bigger{
-    font-size: 140%;
-}
 .big{
     font-weight: 700;
     font-size:300%;
@@ -38,10 +35,12 @@ div.center{
 	}
 }
 .logo-1 {
-    
     color: white;
     animation: neon 3s infinite;
-  }
+}
+img{
+filter: drop-shadow(0 0 0.5rem var(--shadow-color-light)) drop-shadow(0 0 2rem var(--shadow-color)) drop-shadow(0 0 1rem var(--shadow-color));
+}
   
   @keyframes neon {
     0% {
