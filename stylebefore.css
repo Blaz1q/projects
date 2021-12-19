@@ -32,7 +32,7 @@ div.center{
     font-weight: 400;
     font-size:140%;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
 	#bigger{
 		font-size:100%;
 	}
