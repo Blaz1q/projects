@@ -39,12 +39,10 @@ div.center{
     animation: neon 3s infinite;
 }
 .logo-2{
-	filter: drop-shadow(0 0 0.5rem var(--shadow-color-light))drop-shadow(0 0 2rem var(--shadow-color))drop-shadow(0 0 1rem var(--shadow-color));
-	
-}
-img{
 	margin-top:70px;
+	filter: drop-shadow(0 0 0.5rem var(--shadow-color-light))drop-shadow(0 0 2rem var(--shadow-color))drop-shadow(0 0 1rem var(--shadow-color));
 }
+
 @keyframes neon {
 0% {
 	text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
@@ -60,13 +58,5 @@ img{
     text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
     0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
     0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
-	}
-}
-keyframes aaa {
-	0% {
-		filter: drop-shadow(0 0 0.5rem var(--shadow-color-light))drop-shadow(0 0 2rem var(--shadow-color))drop-shadow(0 0 1rem var(--shadow-color));
-	}
-	100% {
-		filter: drop-shadow(0 0 0.8rem var(--shadow-color-light))drop-shadow(0 0 2.1rem var(--shadow-color))drop-shadow(0 0 1.1rem var(--shadow-color));
 	}
 }
