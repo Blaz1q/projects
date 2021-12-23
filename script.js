@@ -1,3 +1,4 @@
+var tick = new Audio("tick.mp3");
 function addd(vnumber){
     if(vnumber<10) return ("0"+vnumber);
     else return vnumber;
@@ -9,7 +10,6 @@ function iledni(nazwa,data){
     
     var odlicz = setInterval(function() {
     var dzis = new Date().getTime();
-  
     var delta = dataa - dzis;
     var dni = Math.floor(delta / (1000 * 60 * 60 * 24));
     var h= Math.floor((delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -18,7 +18,7 @@ function iledni(nazwa,data){
     var sektext ="";
     sektext=addd(sek);
     mintext=addd(min);
-
+	if(sek%1==0)tick.play();
     document.getElementById(nazwa).innerHTML = dni+"d "+h+"h "+mintext+"m "+sektext+"s ";
     if (delta < 0) {
       clearInterval(odlicz);
