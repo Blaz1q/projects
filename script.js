@@ -51,7 +51,7 @@ function iledni(nazwa,data){
     if (delta < 0) {
       clearInterval(odlicz);
       document.getElementById(nazwa).innerHTML = "Matrix";
-      losuj(0,39);
+      losuj(1,39);
     }
   }, 500);
 }
