@@ -6,24 +6,20 @@ function addd(vnumber){
 function losuj(min,max){
   var pick = Math.floor(Math.random() * (max - min + 1)) + min;
   var interval=20;
+  var roll=36;
+  var j=0;
   for(var i=0;i<150;i++){
     interval+=(20*(i*i*i)*0.00001);
-    pick = Math.floor(Math.random() * (max - min + 1)) + min;
-    
-    setTimeout(() => {
+      setTimeout(() => {
+      j++;
       pick = Math.floor(Math.random() * (max - min + 1)) + min;
+      if(j==150) pick = roll;
       document.getElementById('losowanie').innerHTML = "<h1 class='logo-1'>"+pick+"</h1>";
-      console.log(pick);
-  }, interval);
+      }, interval);
 }
-
-}
-
-function rolldice()
-{
-var ranNum = Math.floor( 1 + Math.random() * 6 );
-document.getElementById("dice").innerHTML = ranNum;
-
+function preroll(number){
+  document.getElementById('losowanie').innerHTML = "<h1 class='logo-1'>"+number+"</h1>";
+  }
 }
 function iledni(nazwa,data){
     console.log(nazwa);
