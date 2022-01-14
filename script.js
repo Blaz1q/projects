@@ -6,7 +6,7 @@ function addd(vnumber){
 function losuj(min,max){
   var pick = Math.floor(Math.random() * (max - min + 1)) + min;
   var interval=20;
-  var roll=36;
+  var roll=5;
   var j=0;
   for(var i=0;i<150;i++){
     interval+=(20*(i*i*i)*0.00001);
