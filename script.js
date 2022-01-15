@@ -1,4 +1,6 @@
 var tick = new Audio("tick.mp3");
+var spin = new Audio("spinn.mp3");
+var moai = new Audio("moai.mp3");
 function addd(vnumber){
     if(vnumber<10) return ("0"+vnumber);
     else return vnumber;
@@ -8,18 +10,22 @@ function losuj(min,max){
   var interval=20;
   var roll=5;
   var j=0;
-  for(var i=0;i<150;i++){
+  for(var i=0;i<200;i++){
     interval+=(20*(i*i*i)*0.00001);
+    
       setTimeout(() => {
+      spin.play();
       j++;
       pick = Math.floor(Math.random() * (max - min + 1)) + min;
-      if(j==150) pick = roll;
+      if(j==200) {
+        pick = roll;
+        moai.play();
+      }
       document.getElementById('losowanie').innerHTML = "<h1 class='logo-1'>"+pick+"</h1>";
+      
       }, interval);
 }
-function preroll(number){
-  document.getElementById('losowanie').innerHTML = "<h1 class='logo-1'>"+number+"</h1>";
-  }
+
 }
 function iledni(nazwa,data){
     console.log(nazwa);
@@ -51,7 +57,7 @@ function iledni(nazwa,data){
     if (delta < 0) {
       clearInterval(odlicz);
       document.getElementById(nazwa).innerHTML = "Matrix";
-      losuj(1,39);
+      losuj(0,39);
     }
   }, 500);
 }
