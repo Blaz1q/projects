@@ -1,0 +1,51 @@
+:root{
+    --color1: #283F3B;
+    --color2: #659B5E;
+    --color3: #95BF74;
+    --color4: #337469;
+    --color5: #1baa92;
+}
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+body{
+    background-color: var(--color1);
+}
+::selection{
+    background-color: var(--color5);
+}
+table{
+    border: .3em solid var(--color2);
+    border-radius: .3em;
+    overflow: hidden;
+    text-align: center;
+    margin:0;
+}
+td.prime{
+    background-color: #A4D4B4cc;
+    transition: .3s;
+}
+td.prime:hover{
+    background-color: #99dfb0Fc;
+}
+td{
+    cursor: pointer;
+    border: .1em solid var(--color2);
+    transition: .3s;
+}
+td:hover{
+    background-color: var(--color4);
+}
+input,select{
+    background-color: var(--color2);
+    border: .2em solid var(--color3);
+}
+.output{
+    margin-top:1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}

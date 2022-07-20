@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>klawa.js</title>
+        <meta charset="utf-8" />
+        <link type='text/css' rel='stylesheet' href='style.css' />
+        <script src='ini.js'></script>
+    </head>
+    <body>
+        <!-- param -->
+        <div id='left'>
+            <h1>=CONFIG=</h1>
+            <input type='text' id='filename' placeholder="filename" ><br/>
+            <input type='number' id='frames' step='1' min='0' placeholder="frames" /><br/>
+            <input type='number' step='0.1' id='duration' min='0.1' placeholder="duration" /><br/>
+            <select id='select' onclick="selectinput()">
+                <option value='default'>Default</option>
+                <option value='hue'>Hue</option>
+            </select>
+            <div id='newbutton'></div>
+            <button onclick='generate()'>Generate</button>
+            <br/>
+        </div>
+        <!-- computer generated -->
+        <div id='right-2'></div>
+        <!-- human readible-->
+        <div id='right-1'></div>
+    </body>
+</html>
