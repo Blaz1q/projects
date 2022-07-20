@@ -21,7 +21,7 @@ html{
     position: fixed;
     z-index: 1;
     width:100%;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.386);
     font-size: 2em;
     transition: .2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
@@ -181,6 +181,7 @@ html{
         flex-direction: column;
         gap:1em;
         align-items: center;
+        padding-top:.6em;
     }
     .info .container{
         padding: 0em;
@@ -196,8 +197,15 @@ html{
         width:200px;
         height: auto;
     }
+    .info .skills{
+        transition: .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
     .info .img{
         flex-direction: column;
+        transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .info .sidebar{
+        transition: .7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 }
 .skills img{
