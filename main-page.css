@@ -117,7 +117,6 @@ html{
 }
 .info .container.sidebar{
     grid-area: side;
-    height: 95%;
     transition: .7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     width:90%;
 }
@@ -205,13 +204,20 @@ html{
         transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     .info .sidebar{
+        height:90%;
         transition: .7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+}
+@media screen and (min-height:600px){
+    .info .sidebar{
+        height:95%;
+        
     }
 }
 @media screen and (max-height: 600px){
     .info{
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         gap:1em;
         align-items: center;
         padding-top:.6em;
@@ -238,6 +244,7 @@ html{
         transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     .info .sidebar{
+        height:90%;
         transition: .7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 }
