@@ -1,80 +1,124 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Błażej Czarnecki</title>
-    <link rel="stylesheet" href="loader-style.css" class="loader">
-    <link rel="stylesheet" href="main-page.css" class="loader">
-    <script src="loader.js" class="loader"></script>
-    <script src="main-script.js"></script>
-    <script>
-        var helper = false;
-    </script>
+    <title>CV</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="loader.js"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="loader-style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body onload="loader()">
-    <div class="loader wrap">
-        <p>loading..</p>
-        <div class="loader animation">
-        </div>
-        <footer>Błażej Czarnecki</footer>
+<body onload="loader(); page_load()">
+<!-- loader -->
+<div class="loader wrap">
+    <p>loading..</p>
+    <div class="loader animation">
     </div>
-    <div class="menu transparent">
-        <a href="#header">top</a>
-        <a href="#info">o mnie</a>
-        <a href="#contact">kontakt</a>
-    </div>
-    <div class="header" id="header">
-        <div class="content trigger">
-            <h1>Błażej Czarnecki</h1>
-            <h4>PROGRAMISTA</h4c>
-        </div>
-    </div>
-    <div class="info" id="info">
-        <div class="container skillss before_shown">
-                    <h1>Moje umiejętności:</h1>
-                    <div class="skills">
-                        <img src="./imgs/csslogo.svg">
-                        <img src="./imgs/jslogo.svg">
-                        <img src="./imgs/phplogo.svg">
-                        <img src="./imgs/sqllogo.svg">
-                        <img src="./imgs/clogo.svg">
-                        <img src="./imgs/cpplogo.svg">
-                        <img src="./imgs/cslogo.svg">
-                    </div>
+    <footer>Błażej Czarnecki</footer>
+</div>
+<!-- website -->
+<div class="navbar">
+    <button onclick="showitems()">☰</button>
+</div>
+<div class="container" onscroll="oload()">
+    <section>
+
+    <section class='header'>
+            <div class="content">
+                <h1>Błażej Czarnecki</h1>
+                <h5>Programista</h5>
+            </div>
+        </section>
+    </section>
+    <section style="flex-direction: column; align-content: center;">
+        <section class="content top">
+            <h1>Moje Projekty:</h1>
+        </section>
+        <section class="content" >
+            
+        <div class="galeria">
+			<section>
+                <div class="lang">
+                    <img height="100%" src="./imgs/cpplogo.svg" alt="c++">
                 </div>
-                <div class="img container before_shown">
-                    <div>
-                        <img src="./imgs/zdjcv.png" alt="zdjcv">
-                        <h1>Błażej Czarnecki</h1>
-                    </div>
-                    <div>
-                        <h3>Programuję od 5 lat, swoją przygodę zacząłem od języka C++, po czym uczyłem się HTML,CSS,JS,PHP oraz SQL.</h3>
-                        <h3>Robiłem projekty w językach C#,C oraz w frameworkach takich jak Jquery, oraz PDO</h3>
-                    </div>
+                <div class="desc">
+                    <h1>COLORS</h1>
+                    <p>Ten projekt jest wersją "klawajs", napisany w c++</p>
+                    <p>polega on na generowaniu kolorów w formacie ".ckAnimation" - format obsługiwany przez firmę Bloody do klawiatur podświetlanych</p>
                 </div>
-                <div class="container sidebar before_shown">
-                    <h1>Moje projekty:</h1>
-                        <p>colors (C++)</p>
-                        <p>FastShop (PHP,SQL)</p>
-                        <p>KlawaJS (JS)</p>
-                        <p>SklepPDO (PHP,PDO,SQL)</p>
-                        <p>SklepPHP (PHP,SQL)</p>
-                        <p>Sortowanie (PHP)</p>
-                        <p>Oraz ta strona! (JS)</p>
-                        
+                <div class="showcase">
+                    <img src="./imgs/colors.png" alt="FastShop">
                 </div>
-    </div>
-    <div class="contact" id="contact">
-        <h1>Masz propozycje?</h1>
-        <h2>Pisz.</h2>
-        <div class="contact grid">
-            <p>Email</p>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>Twitter</p>
-        </div>
-    </div>
+            </section>
+			<section>
+                <div class="lang">
+                    <img height="100%" src="./imgs/phplogo.svg" alt="php">
+                    <img height="100%" src="./imgs/sqllogo.svg" alt="sql">
+                </div>
+                <div class="desc">
+                <h1>FastShop</h1>
+                <p>projekt został napisany w PHP</p>
+                <p>strona posiada błędy, lecz projekt nie będzie kontynuowany</p>
+                </div>
+            <div class="showcase">
+                <img src="./imgs/fastshop.png" alt="FastShop">
+            </div>
+            </section>
+			<section>
+                <div class="lang">
+                    <img height="100%" src="./imgs/jslogo.svg" alt="js">
+                </div>
+                <div class="desc">
+                    <h1>KlawaJS</h1>
+                    <p>Następca projektu <strong>COLORS</strong></p>
+                    <p>Posiada interfejs graficzny</p>
+                    
+                </div>
+                <div class="showcase">
+                    <img src="./imgs/klawajs.png" alt="FastShop">
+                </div>
+                
+            </section>
+			<section>
+                <div class="lang">
+                    <img height="100%" src="./imgs/phplogo.svg" alt="php">
+                    <p>PDO</p>
+                    <img height="100%" src="./imgs/sqllogo.svg" alt="sql">
+                </div>
+                SklepPDO
+            </section>
+			<section>
+                <div class="lang">
+                    <img height="100%" src="./imgs/phplogo.svg" alt="php">
+                    <img height="100%" src="./imgs/sqllogo.svg" alt="sql">
+                </div>
+                SklepPHP
+            </section>
+			<section>
+                <div class="lang">
+                    <img height="100%" src="./imgs/phplogo.svg" alt="php">
+                </div>
+                sortowanie
+            </section>
+        </section>
+    </section>
+    <section>
+        <section class="kontakt">
+            <div class="cv">
+
+            </div>
+            <div class="email">
+                <h1>Napisz do mnie!</h1>
+                <form action="post">
+                    <input type="text" name="temat">
+                    <textarea name="email" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+        </section>
+    </section>
+</div>
 </body>
 </html>
