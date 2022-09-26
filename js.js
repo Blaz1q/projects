@@ -20,6 +20,16 @@ class Shower{
     }
   }
 }
+function showtext(elem){
+  let text = document.querySelectorAll('.showcase h2');
+  text[elem].style.transition = ".2s";
+  text[elem].style.opacity = "1";
+}
+function hidetext(elem){
+  let text = document.querySelectorAll('.showcase h2');
+  text[elem].style.transition = ".2s";
+  text[elem].style.opacity = "0";
+}
 function page_load(){
   const slider = document.querySelector('.galeria');
 let isDown = false;
