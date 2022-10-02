@@ -121,6 +121,15 @@ body {
     float: left;
     align-content: space-between;
   }
+  .galeria .desc {
+    height: 60%;
+  }
+  .galeria .showcase {
+    height: 30%;
+  }
+  .galeria .showcase h2 {
+    font-size: 150%;
+  }
   ::-webkit-scrollbar {
     width: 3px;
     height: 9px;
@@ -225,37 +234,37 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr6.svg");
+  background-image: url("./imgs/wavesr3.svg");
 }
 .galeria section:nth-child(2) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr3.svg");
+  background-image: url("./imgs/wavesr4.svg");
 }
 .galeria section:nth-child(3) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr5.svg");
+  background-image: url("./imgs/wavesr3.svg");
 }
 .galeria section:nth-child(4) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr6.svg");
+  background-image: url("./imgs/wavesr2.svg");
 }
 .galeria section:nth-child(5) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr5.svg");
+  background-image: url("./imgs/wavesr1.svg");
 }
 .galeria section:nth-child(6) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr6.svg");
+  background-image: url("./imgs/wavesr5.svg");
 }
 .galeria section {
   border-radius: 1em 1em 0 0;
