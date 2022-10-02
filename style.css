@@ -178,6 +178,12 @@ body {
     min-width: 0;
     flex-direction: column;
   }
+  .galeria .showcase {
+    height: 30%;
+  }
+  .galeria .showcase h2 {
+    font-size: 130%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .galeria {
@@ -234,19 +240,19 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr3.svg");
+  background-image: url("./imgs/wavesr6.svg");
 }
 .galeria section:nth-child(2) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr4.svg");
+  background-image: url("./imgs/wavesr2.svg");
 }
 .galeria section:nth-child(3) {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr3.svg");
+  background-image: url("./imgs/wavesr4.svg");
 }
 .galeria section:nth-child(4) {
   background-position: bottom;
@@ -264,7 +270,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("./imgs/wavesr5.svg");
+  background-image: url("./imgs/wavesr1.svg");
 }
 .galeria section {
   border-radius: 1em 1em 0 0;
