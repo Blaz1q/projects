@@ -80,6 +80,88 @@ body {
   gap: 0.5em;
 }
 
+.galeria h1 {
+  text-align: center;
+  font-size: 150%;
+  font-family: "Rubik", serif;
+}
+.galeria .desc {
+  height: 30%;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.galeria .desc p {
+  font-family: roboto;
+}
+.galeria section:nth-child(1) {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./imgs/wavesr1.svg");
+}
+.galeria section:nth-child(2) {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./imgs/wavesr6.svg");
+}
+.galeria section:nth-child(3) {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./imgs/wavesr6.svg");
+}
+.galeria section:nth-child(4) {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./imgs/wavesr3.svg");
+}
+.galeria section:nth-child(5) {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./imgs/wavesr5.svg");
+}
+.galeria section:nth-child(6) {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("./imgs/wavesr6.svg");
+}
+.galeria section {
+  border-radius: 1em 1em 0 0;
+}
+.galeria .showcase {
+  position: relative;
+  height: 60%;
+  margin: 1em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+.galeria .showcase img {
+  width: 100%;
+  max-height: 350px;
+  box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.506);
+  border-radius: 0.2em;
+  transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.galeria .showcase img:hover {
+  filter: brightness(80%);
+}
+.galeria .showcase .imgcenter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  padding: 0.5em;
+  background-color: rgba(115, 115, 115, 0.6431372549);
+  border-radius: 5em;
+}
+
 @media only screen and (max-width: 900px) {
   .galeria section {
     width: 100%;
@@ -122,10 +204,14 @@ body {
     align-content: space-between;
   }
   .galeria .desc {
-    height: 60%;
+    height: 50%;
   }
   .galeria .showcase {
-    height: 30%;
+    height: 40%;
+  }
+  .galeria .showcase img {
+    width: auto;
+    height: 100%;
   }
   .galeria .showcase h2 {
     font-size: 150%;
@@ -222,88 +308,6 @@ body {
     flex-direction: column;
   }
 }
-.galeria h1 {
-  text-align: center;
-  font-size: 150%;
-  font-family: "Rubik", serif;
-}
-.galeria .desc {
-  height: 30%;
-  text-align: center;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-.galeria .desc p {
-  font-family: roboto;
-}
-.galeria section:nth-child(1) {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./imgs/wavesr6.svg");
-}
-.galeria section:nth-child(2) {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./imgs/wavesr2.svg");
-}
-.galeria section:nth-child(3) {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./imgs/wavesr4.svg");
-}
-.galeria section:nth-child(4) {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./imgs/wavesr2.svg");
-}
-.galeria section:nth-child(5) {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./imgs/wavesr1.svg");
-}
-.galeria section:nth-child(6) {
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("./imgs/wavesr1.svg");
-}
-.galeria section {
-  border-radius: 1em 1em 0 0;
-}
-.galeria .showcase {
-  position: relative;
-  height: 60%;
-  margin: 1em;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: flex-start;
-}
-.galeria .showcase img {
-  width: 100%;
-  max-height: 350px;
-  box-shadow: 0.5em 0.5em rgba(0, 0, 0, 0.506);
-  border-radius: 0.2em;
-  transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.galeria .showcase img:hover {
-  filter: brightness(80%);
-}
-.galeria .showcase .imgcenter {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  opacity: 0;
-  padding: 0.5em;
-  background-color: rgba(115, 115, 115, 0.6431372549);
-  border-radius: 5em;
-}
-
 .header {
   width: 100%;
   height: 100vh;
