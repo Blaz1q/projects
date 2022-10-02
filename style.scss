@@ -184,7 +184,7 @@ body{
         .showcase{
             img{
                 width: auto;
-                height: 100%;
+                max-height: 350px;
             }
             height: 40%;
             h2{
@@ -240,7 +240,11 @@ body{
             flex-direction: column;
         }
         .showcase{
-            height: 30%;
+            height: 60%;
+            img{
+                width: 100%;
+                max-height: 350px;
+            }
             h2{
                 font-size: 130%;
             }
@@ -281,6 +285,16 @@ body{
             align-items: center;
             min-width: 0;
             flex-direction: column;
+        }
+        .showcase{
+            height: 60%;
+            img{
+                width: 100%;
+                max-height: 350px;
+            }
+            h2{
+                font-size: 130%;
+            }
         }
     }
 }
